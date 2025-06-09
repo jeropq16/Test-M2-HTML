@@ -1,0 +1,205 @@
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* General styles for all pages */
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    background-color: #f5f5eb;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+    font-size: large;
+}
+
+
+/* For the portfolio used background color, a small transition and button animation with the hover */
+.project {
+    background-color: #e2e2cd;
+    padding: 15px;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+    border-radius: 100px;
+}
+
+.project a {
+    color: #41423a;
+}
+
+.project:hover {
+    transform: scale(1.02);
+    background-color: #c1b6a3;
+}
+
+
+
+/* Added shadows, colors, aligned text to the center, font size, and animated buttons for the contact form page*/
+
+form input, form textarea, form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+button {
+    background-color: #115bca;
+    color: white;
+    border: none;
+    transition: background-color 0.3s;
+}
+.contact {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f5f5eb;
+    box-shadow: 0 0 15px rgb(10, 10, 10);
+    border-radius: 10px;
+}
+
+.contact h2 {
+    text-align: center;
+    color: #333;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    color: #444;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: inherit;
+    transition: border 0.3s ease;
+}
+
+.contact-form,
+.contact-form {
+    border-color: #f5f5eb;
+}
+
+.contact-form button {
+    background-color: #797960;
+    color: white;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #41423a;
+}
+
+/* Navigation style menu with animations, transitions, color changes, and font and size changes*/
+
+header, nav, main, footer {
+    margin-bottom: 20px;
+    
+}
+
+nav ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #021a33;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+    background-color: #f5f5eb;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.nav-menu li a {
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+/*Animation of navigation buttons with a hover*/
+.nav-menu li a:hover {
+    background-color: #41423a;
+    color: white;
+}
+
+
+/* Created an About Me class to make the section look good and organized*/
+
+.about-me {
+    max-width: 900px;
+    margin: 0 auto 40px;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 0 15px black;
+}
+
+.about-me h2 {
+    text-align: center;;
+    color: black;
+}
+
+.about-me-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.about-me-content img {
+    width: 140px;
+    height: 290px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #000000;
+    box-shadow: 0 4px 10px black;
+}
+
+.about-me .text {
+    flex: 1;
+    color: black;
+}
+/* Responsive design with media queries */
+@media (max-width: 768px) {
+    nav ul {
+    flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+    padding: 10px;
+    }
+}
